@@ -1,0 +1,33 @@
+{
+  "name": "creator-ai-mcp",
+  "version": "1.0.0",
+  "description": "Creator AI — Canvas LMS Management MCP Server. Manage courses, modules, assignments, pages, quizzes, and rubrics via MCP.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "creator-ai": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": ["mcp", "canvas", "lms", "instructure", "education"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "dotenv": "^18.0.9",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}

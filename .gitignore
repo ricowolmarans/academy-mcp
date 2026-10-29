@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+*.log
+coverage/
+.DS_Store
+*.tsbuildinfo
+
+# Deploy outputs may contain tokens
+deploy/mcp-config.snippet.json
+deploy/mcp-config.docker.json
+deploy/docker-run.sh
